@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+.carousel-item {
+  position: relative; /* Position relative pour le positionnement absolu */
+}
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur du carousel */
+  height: 100%; /* Prend toute la hauteur du carousel */
+  object-fit: cover; /* Assure que l'image s'adapte au conteneur */
+  z-index: 1; /* Assurez-vous que l'image soit au-dessus */
+}
