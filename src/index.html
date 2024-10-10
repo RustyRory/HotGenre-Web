@@ -21,7 +21,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#home">HG</a>
+        <a class="navbar-brand" href="#home">
+          <img src="medias/images/Logo.png" alt="HG" class="logo img-fluid" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,52 +39,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#music">Music</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#media">Media</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#store">Store</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link" href="#content" data-bs-slide-to="0"
+                >About us</a
               >
-                Socials
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.instagram.com/hot_genre/"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://soundcloud.com/hot_genre"
-                    target="_blank"
-                    >Soundcloud</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">...</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Contact us</a></li>
-              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content" data-bs-slide-to="1">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content" data-bs-slide-to="2">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content" data-bs-slide-to="3">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://linktr.ee/hot_genre"
+                target="_blank"
+                >Socials</a
+              >
             </li>
           </ul>
         </div>
@@ -105,11 +84,16 @@
     <!-- MAIN -->
     <main class="container-fluid">
       <!-- ABOUT US -->
-      <section id="about" class="carousel slide" data-bs-ride="false">
+      <section
+        id="content"
+        class="carousel slide"
+        data-bs-ride="false"
+        data-bs-interval="false"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#about"
+            data-bs-target="#content"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -117,54 +101,85 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#about"
+            data-bs-target="#content"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#about"
+            data-bs-target="#content"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#content"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div id="about" class="carousel-item active">
             <img
               src="medias/images/About1.jpg"
               class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption">
-              <h5>First slide label</h5>
+              <h3>About us</h3>
               <p>
-                Some representative placeholder content for the first slide.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
               </p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div id="news" class="carousel-item">
             <img
               src="medias/images/About2.jpg"
               class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption">
-              <h5>First slide label</h5>
+              <h3>News</h3>
               <p>
-                Some representative placeholder content for the first slide.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
               </p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div id="music" class="carousel-item">
             <img
               src="medias/images/About3.jpg"
               class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption">
-              <h5>First slide label</h5>
+              <h3>Music</h3>
               <p>
-                Some representative placeholder content for the first slide.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
+              </p>
+            </div>
+          </div>
+          <div id="media" class="carousel-item">
+            <img
+              src="medias/images/About2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h3>Media</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
               </p>
             </div>
           </div>
@@ -173,13 +188,13 @@
         <img
           src="medias/images/AboutBg.png"
           class="overlay-image"
-          alt="Image superposée"
+          alt="overlay"
         />
 
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#about"
+          data-bs-target="#content"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -188,7 +203,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#about"
+          data-bs-target="#content"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -198,6 +213,47 @@
 
       <!-- OTHER -->
     </main>
+
+    <!-- FOOTER -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+          </a>
+          <span class="text-muted">&copy; 2024 HotGenre</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -209,5 +265,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

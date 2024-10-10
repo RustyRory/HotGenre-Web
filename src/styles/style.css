@@ -1,10 +1,30 @@
+* {
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo {
+  max-height: 50px; /* Ajuste cette valeur pour limiter la taille du logo */
+  width: auto; /* Maintient les proportions de l'image */
 }
 
 .carousel-item {
   position: relative; /* Position relative pour le positionnement absolu */
 }
+
 .overlay-image {
   position: absolute;
   top: 0;
