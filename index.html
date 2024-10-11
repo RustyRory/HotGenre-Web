@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Genre</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="src/medias/images/Logo.png"
+            alt="HG"
+            class="logo img-fluid"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-bs-slide-to="0"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news" data-bs-slide-to="1">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#music" data-bs-slide-to="2">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#media" data-bs-slide-to="3">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://linktr.ee/hot_genre"
+                target="_blank"
+                >Socials</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home" class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="src/medias/images/hg.jpg"
+            class="img-fluid"
+            alt="Image d'accueil"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container-fluid">
+      <!-- ABOUT US -->
+      <section
+        id="content"
+        class="carousel slide"
+        data-bs-ride="false"
+        data-bs-interval="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#content"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#content"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#content"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#content"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div id="about" class="carousel-item active">
+            <img
+              src="src/medias/images/About1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h3>About us</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
+              </p>
+            </div>
+          </div>
+          <div id="news" class="carousel-item">
+            <img
+              src="src/medias/images/About2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h3>News</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
+              </p>
+            </div>
+          </div>
+          <div id="music" class="carousel-item">
+            <img
+              src="src/medias/images/About3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h3>Music</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
+              </p>
+            </div>
+          </div>
+          <div id="media" class="carousel-item">
+            <img
+              src="src/medias/images/About2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h3>Media</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit dolor doloribus unde blanditiis quod quidem,
+                eveniet eum placeat totam beatae pariatur eligendi voluptate
+                incidunt, ipsam iste consequatur, vitae dolore dolorum!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="src/medias/images/AboutBg.png"
+          class="overlay-image"
+          alt="overlay"
+        />
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#content"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#content"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <!-- OTHER -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+          </a>
+          <span class="text-muted">&copy; 2024 HotGenre</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/carousel.js"></script>
+  </body>
+</html>
