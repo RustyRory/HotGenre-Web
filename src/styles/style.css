@@ -10,6 +10,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 0%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -51,4 +52,46 @@ body {
 .dropdown-item:hover {
   background-color: #333; /* Couleur d'arrière-plan lors du survol */
   color: #fff; /* Couleur du texte blanche lors du survol */
+}
+
+/* Taille par défaut pour petits écrans */
+.custom-responsive-h3 {
+  font-size: 0.75rem; /* Par défaut */
+}
+
+.custom-responsive-p {
+  font-size: 0.5em; /* Par défaut */
+}
+
+/* Taille pour les écrans moyens (>= 768px) */
+@media (min-width: 768px) {
+  .custom-responsive-h3 {
+    font-size: 1rem;
+  }
+
+  .custom-responsive-p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Taille pour les grands écrans (>= 992px) */
+@media (min-width: 992px) {
+  .custom-responsive-h3 {
+    font-size: 1.25rem;
+  }
+
+  .custom-responsive-p {
+    font-size: 1rem;
+  }
+}
+
+/* Très grands écrans (>= 1200px) */
+@media (min-width: 1200px) {
+  .custom-responsive-h3 {
+    font-size: 1.5rem;
+  }
+
+  .custom-responsive-p {
+    font-size: 1.25rem;
+  }
 }
