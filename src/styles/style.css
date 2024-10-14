@@ -1,11 +1,9 @@
-* {
-}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
 }
 
 .carousel-caption {
@@ -17,20 +15,40 @@ body {
 }
 
 .logo {
-  max-height: 50px; /* Ajuste cette valeur pour limiter la taille du logo */
-  width: auto; /* Maintient les proportions de l'image */
+  max-height: 50px;
+  width: auto;
 }
 
 .carousel-item {
-  position: relative; /* Position relative pour le positionnement absolu */
+  position: relative;
 }
 
 .overlay-image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Prend toute la largeur du carousel */
-  height: 100%; /* Prend toute la hauteur du carousel */
-  object-fit: cover; /* Assure que l'image s'adapte au conteneur */
-  z-index: 1; /* Assurez-vous que l'image soit au-dessus */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positionne le dropdown juste sous le titre */
+  left: 50%;
+  transform: translateX(-50%); /* Centrer le dropdown */
+  margin: 0rem; /* Espace entre le titre et le dropdown */
+  background-color: #000; /* Couleur de fond noire */
+  border: none; /* Supprimer la bordure si présente */
+}
+
+.dropdown-item {
+  color: #fff; /* Couleur du texte blanche pour les éléments */
+}
+
+.dropdown-item:hover {
+  background-color: #333; /* Couleur d'arrière-plan lors du survol */
+  color: #fff; /* Couleur du texte blanche lors du survol */
 }
