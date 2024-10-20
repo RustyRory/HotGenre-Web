@@ -19,8 +19,8 @@ header {
 /* Paragraphe caché au début */
 #header-title {
   opacity: 0;
-  transform: translateY(-30px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateY(-50px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 /* Classe qui rend le paragraphe visible */
@@ -32,8 +32,8 @@ header {
 /* Paragraphe caché au début */
 #header-content {
   opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateX(-50px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 /* Classe qui rend le paragraphe visible */
@@ -64,6 +64,10 @@ header {
   #header-logo {
     width: 200px;
     height: 200px;
+  }
+
+  #header-content {
+    transform: translateX(-100px);
   }
 }
 
