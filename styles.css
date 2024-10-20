@@ -1,0 +1,97 @@
+body {
+  background-color: #000000;
+}
+
+a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+header {
+  min-height: 100vh;
+}
+
+/* Paragraphe caché au début */
+#header-title {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Classe qui rend le paragraphe visible */
+#header-title.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Paragraphe caché au début */
+#header-content {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Classe qui rend le paragraphe visible */
+#header-content.visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+#header-logo {
+  width: 150px;
+  height: 150px;
+  background-image: url(images/Logo.png);
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image dans le conteneur */
+  background-size: cover; /* L'image remplira le conteneur sans être déformée */
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 576px) {
+  #header-logo {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 768px) {
+  #header-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 992px) {
+  #header-logo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 1200px) {
+  #header-logo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 1320px) {
+  #header-logo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
+}

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hot Genre</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,26 +13,22 @@
       crossorigin="anonymous"
     />
 
-    <!-- Lien Bootstrap Icons (pour les icônes) -->
+    <!-- Fontawesome -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Hot Genre</title>
   </head>
-
-  <body>
+  <body class="lh-1.8">
     <!-- NAVBAR -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
-          <img
-            src="src/medias/images/Logo.png"
-            alt="HG"
-            class="logo img-fluid"
-          />
+          <img src="/images/Logo.png" alt="HG" class="logo img-fluid" />
         </a>
         <button
           class="navbar-toggler"
@@ -75,374 +71,107 @@
         </div>
       </div>
     </nav>
+    <!-- END NAVBAR -->
 
     <!-- HEADER -->
     <header
       id="home"
-      class="container-fluid bg-black d-flex justify-content-center align-items-center vh-100"
+      class="position-relative d-flex justify-content-center align-items-center"
     >
-      <div class="row w-100">
-        <div class="col-12 text-center">
-          <img
-            src="src/medias/images/logo.png"
-            class="img-fluid w-25 w-md-50 w-sm-75"
-            alt="Logo"
-            id="logo-header"
-          />
-        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-white text-center fw-bold">
+            <div class="row">
+              <div class="col-12">
+                <div id="header-logo"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-12 text-white text-center fw-bold"
+                id="header-title"
+              >
+                <h1>HotGenre</h1>
+              </div>
+              <div class="col-4"></div>
+            </div>
+          </div>
 
-        <div class="col-12 text-center">
-          <div class="dropdown">
-            <h1 class="text-white" id="dropdownTitle">HOT GENRE</h1>
-            <ul class="dropdown-menu" aria-labelledby="dropdownTitle">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://www.instagram.com/hot_genre"
-                  target="_blank"
-                  >Instagram</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://www.facebook.com/profile.php?id=100068013309153"
-                  target="_blank"
-                  >Facebook</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://open.spotify.com/playlist/0aUCB37LyR9gH2xPl3S6tW"
-                  target="_blank"
-                  >Spotify</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://open.spotify.com/playlist/0aUCB37LyR9gH2xPl3S6tW"
-                  target="_blank"
-                  >Deezer</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://soundcloud.com/hot_genre"
-                  target="_blank"
-                  >Soundcloud</a
-                >
-              </li>
-            </ul>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-1" id="header-content">
+                <div class="d-flex flex-column mb-2">
+                  <div class="p-1 text-center">
+                    <!-- Lien vers Instagram (Font Awesome) -->
+                    <a
+                      href="https://www.instagram.com/hot_genre/"
+                      title="Instagram"
+                      class="text-body-secondary mx-2"
+                      target="_blank"
+                    >
+                      <i
+                        class="fa-brands fa-instagram"
+                        style="font-size: 1.5rem"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="p-1 text-center">
+                    <!-- Lien vers Spotify (Font Awesome) -->
+                    <a
+                      href="https://open.spotify.com/playlist/0aUCB37LyR9gH2xPl3S6tW"
+                      class="text-body-secondary mx-2"
+                      title="Spotify"
+                      target="_blank"
+                    >
+                      <i
+                        class="fa-brands fa-spotify"
+                        style="font-size: 1.5rem"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="p-1 text-center">
+                    <!-- Lien vers SoundCloud (Font Awesome) -->
+                    <a
+                      href="https://soundcloud.com/hot_genre"
+                      class="text-body-secondary mx-2"
+                      title="SoundCloud"
+                      target="_blank"
+                    >
+                      <i
+                        class="fa-brands fa-soundcloud"
+                        style="font-size: 1.5rem"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="p-1 text-center">
+                    <!-- Lien vers Facebook (Font Awesome) -->
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100068013309153"
+                      class="text-body-secondary mx-2"
+                      title="Facebook"
+                      target="_blank"
+                    >
+                      <i
+                        class="fa-brands fa-facebook"
+                        style="font-size: 1.5rem"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- MAIN -->
-    <main class="container-fluid">
-      <!-- ABOUT US -->
-      <section
-        id="about"
-        class="carousel slide"
-        data-bs-ride="false"
-        data-bs-interval="false"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#about"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#about"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#about"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#about"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="src/medias/images/About1.jpg"
-              class="d-block w-100"
-              alt="About1"
-            />
-            <div
-              class="carousel-caption d-flex justify-content-center align-items-center flex-column w-75 w-md-50 w-lg-40"
-            >
-              <h3 class="custom-responsive-h3">À propos de nous</h3>
-              <p class="custom-responsive-p">
-                Bienvenue chez HOTGENRE, une communauté passionnée dédiée à la
-                promotion et à l'organisation d'événements techno.
-                <br />
-                Fondée en 2019, notre mission est de rassembler des amateurs de
-                musique électronique pour célébrer la diversité et la créativité
-                de la scène techno. <br />
-                Nous croyons fermement que la musique a le pouvoir d’unir les
-                gens et de créer des expériences uniques. À travers nos
-                événements, nous mettons en avant des talents émergents et des
-                artistes établis, tout en créant un environnement inclusif et
-                accueillant pour tous.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="src/medias/images/About2.jpg"
-              class="d-block w-100"
-              alt="About2"
-            />
-            <div
-              class="carousel-caption d-flex justify-content-center align-items-center flex-column w-75 w-md-50 w-lg-40"
-            >
-              <h3 class="custom-responsive-h3">À propos de nous</h3>
-              <p class="custom-responsive-p">
-                La musique techno est au cœur de notre identité. Ce genre
-                dynamique et en constante évolution se caractérise par des
-                rythmes hypnotiques, des basses puissantes et des sonorités
-                innovantes. <br />
-                En explorant des sous-genres tels que la techno hardcore ou la
-                techno industriel, nous offrons à notre public une palette
-                sonore riche et variée. <br />
-                Chaque événement est une invitation à découvrir de nouveaux sons
-                et à vivre une expérience immersive qui transporte chacun dans
-                un voyage musical unique.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="src/medias/images/About3.jpg"
-              class="d-block w-100"
-              alt="About3"
-            />
-            <div
-              class="carousel-caption d-flex justify-content-center align-items-center flex-column w-75 w-md-50 w-lg-40"
-            >
-              <h3 class="custom-responsive-h3">Nos artistes</h3>
-              <p class="custom-responsive-p">LIST</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="src/medias/images/About2.jpg"
-              class="d-block w-100"
-              alt="About4"
-            />
-            <div
-              class="carousel-caption d-flex justify-content-center align-items-center flex-column w-75 w-md-50 w-lg-40"
-            >
-              <h3 class="custom-responsive-h3">Notre équipe</h3>
-              <p class="custom-responsive-p">LIST</p>
-            </div>
-          </div>
-        </div>
-
-        <img
-          src="src/medias/images/AboutBg.png"
-          class="overlay-image"
-          alt="overlay"
-        />
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#about"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Précédent</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#about"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Suivant</span>
-        </button>
-      </section>
-
-      <hr class="text-white mx-auto" style="width: 50%" />
-
-      <!-- NEWS -->
-
-      <section id="news" class="text-white">
-        <h2 class="text-center">Calendrier</h2>
-        <div class="table-responsive mx-auto" style="width: 75%">
-          <table class="table table-hover table-dark align-middle">
-            <thead>
-              <tr>
-                <th scope="col">Événement</th>
-                <th scope="col">Date</th>
-                <th scope="col">Artistes</th>
-                <th scope="col">Lien</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>R-Volt, LeMans, France</td>
-                <td>11 Octobre 2024</td>
-                <td>HNO3 b2b S-006</td>
-                <td>
-                  <a
-                    href="https://www.instagram.com/p/DAlwM3mtAVs/"
-                    class="text-white"
-                    target="_blank"
-                    >Plus d'infos</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Le Block, Nantes, France</td>
-                <td>28 Septembre 2024</td>
-                <td>CRSN | HNO3 b2b S-006 | KØNY</td>
-                <td>
-                  <a
-                    href="https://www.instagram.com/p/DAQ1ralP5qu/"
-                    class="text-white"
-                    target="_blank"
-                    >Plus d'infos</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>T'es Rock Coco, Angers, France</td>
-                <td>26 Septembre 2024</td>
-                <td>HNO3 | S-006</td>
-                <td>
-                  <a
-                    href="https://www.instagram.com/p/DATkI7AvkA1/"
-                    class="text-white"
-                    target="_blank"
-                    >Plus d'infos</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <hr class="text-white mx-auto" style="width: 50%" />
-
-      <!-- MUSIC -->
-
-      <section id="music" class="text-white">
-        <h2 class="text-center">Nos Musiques</h2>
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1420781752&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        <div
-          style="
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-          "
-        >
-          <a
-            href="https://soundcloud.com/s-006_s_v_n"
-            title="S-006 / S.V.N"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >S-006 / S.V.N</a
-          >
-          ·
-          <a
-            href="https://soundcloud.com/s-006_s_v_n/sets/s-006-mix"
-            title="S-006 MIXES"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >S-006 MIXES</a
-          >
-        </div>
-      </section>
-
-      <hr class="text-white mx-auto" style="width: 50%" />
-
-      <!-- MEDIA -->
-
-      <section id="media" class="text-white">
-        <h2 class="text-center">Nos médias</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-          odit sit iste officia esse consequuntur neque perspiciatis porro
-          aperiam aliquam quam accusamus voluptatum saepe tenetur dolorem, omnis
-          maiores nam eaque?
-        </p>
-      </section>
-
-      <!-- OTHER -->
-    </main>
-
-    <!-- FOOTER -->
-
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-          </a>
-          <span class="text-muted">&copy; 2024 HotGenre</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter" />
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram" />
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <!-- END HEADER -->
 
     <!-- Lien Bootstrap JS et Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
 
-    <script src="src/js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
