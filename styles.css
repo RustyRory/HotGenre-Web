@@ -36,16 +36,29 @@ header {
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
+#header-content a {
+  pointer-events: none;
+}
+
 /* Classe qui rend le paragraphe visible */
 #header-content.visible {
   opacity: 1;
   transform: translateX(0px);
 }
 
+#header-content.visible a {
+  pointer-events: auto;
+  color: #ffffff;
+}
+
+#header-content.visible a:hover {
+  pointer-events: auto;
+  color: #6c757d;
+}
+
 #header-logo {
-  width: 150px;
-  height: 150px;
-  background-image: url(images/Logo.png);
+  width: 175px;
+  height: auto;
   background-repeat: no-repeat;
   background-position: center; /* Centre l'image dans le conteneur */
   background-size: cover; /* L'image remplira le conteneur sans être déformée */
@@ -54,16 +67,14 @@ header {
 /* Media query pour les écrans plus larges */
 @media (min-width: 576px) {
   #header-logo {
-    width: 175px;
-    height: 175px;
+    width: 200px;
   }
 }
 
 /* Media query pour les écrans plus larges */
 @media (min-width: 768px) {
   #header-logo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
   }
 
   #header-content {
@@ -74,8 +85,7 @@ header {
 /* Media query pour les écrans plus larges */
 @media (min-width: 992px) {
   #header-logo {
-    width: 250px;
-    height: 250px;
+    width: 275px;
   }
 }
 
@@ -83,7 +93,6 @@ header {
 @media (min-width: 1200px) {
   #header-logo {
     width: 300px;
-    height: 300px;
   }
 }
 
@@ -91,22 +100,10 @@ header {
 @media (min-width: 1320px) {
   #header-logo {
     width: 350px;
-    height: 350px;
   }
 }
 
 .logo {
   max-height: 50px;
   width: auto;
-}
-
-.carousel-container {
-  max-width: 75vw; /* Limite la largeur à 75% de la largeur de l'écran */
-  max-height: 75vh; /* Limite la hauteur à 75% de la hauteur de l'écran */
-  margin: 0 auto; /* Centrer le carousel horizontalement */
-}
-
-.carousel-inner img {
-  width: 100%; /* S'assure que les images prennent toute la largeur du carousel */
-  height: auto; /* Conserve les proportions de l'image */
 }
