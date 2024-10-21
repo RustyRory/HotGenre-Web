@@ -99,3 +99,14 @@ header {
   max-height: 50px;
   width: auto;
 }
+
+.carousel-container {
+  max-width: 75vw; /* Limite la largeur à 75% de la largeur de l'écran */
+  max-height: 75vh; /* Limite la hauteur à 75% de la hauteur de l'écran */
+  margin: 0 auto; /* Centrer le carousel horizontalement */
+}
+
+.carousel-inner img {
+  width: 100%; /* S'assure que les images prennent toute la largeur du carousel */
+  height: auto; /* Conserve les proportions de l'image */
+}
